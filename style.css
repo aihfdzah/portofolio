@@ -480,6 +480,7 @@ form button {
   font-size: 15px;
   margin-top: 10px;
   cursor: pointer;
+  border: none;
 }
 .copyright {
   position: relative;

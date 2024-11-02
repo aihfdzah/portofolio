@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Home:AH</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/07400ab217.js" crossorigin="anonymous"></script>
@@ -170,30 +171,55 @@
 <!-- ------------------------Project-------------------------->
 <div id="project">
     <div class="container">
-        <h1 class="sub-title"></h1>
+        <h1 class="sub-title">My Project</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/projek1.png" alt="">
                 <div class="layer">
                     <h3>Copywriting</h3>
-                    <p>awokawokawok</p>
+                    <p>Create writing or captions that will be sent to social media in the form of a website.</p>
                 </div>
             </div>
             <div class="work">
                 <img src="images/projek2.png" alt="">
                 <div class="layer">
                     <h3>Writer</h3>
-                    <p>awokawokawok</p>
+                    <p>Create writing such as short stories, blogs and novels</p>
                 </div>
             </div>
             <div class="work">
                 <img src="images/projekk3.png" alt="">
                 <div class="layer">
                     <h3>Speech English & Arabic Language</h3>
-                    <p>awokawokawok</p>
+                    <p>Speech in front people be a English and Arabic Language</p>
                 </div>
             </div>
         </div>
+
+        <div class="work-list">
+            <div class="work">
+                <img src="images/projek4.jpg" alt="">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>Create a website using Html CSS and Javascript and Laravel language</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/projek5.jpg" alt="">
+                <div class="layer">
+                    <h3>Design</h3>
+                    <p>Create designs such as book covers, pamphlets, posters and the like</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/projek6.jpg" alt="">
+                <div class="layer">
+                    <h3>Photo & Videography</h3>
+                    <p>Take a Photo and Video</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </div>
@@ -242,49 +268,7 @@
 
 
 
-<script>
-
-document.getElementById(learnmore).addEventListener("click", function(event) {
-        event.preventDefault();
-        document.querySelector(".tab-content").classList.toggle("show-content");
-    });
-
-    function toggleContent() {
-        var content = document.getElementById('learn more');
-        content.classList.toggle('expand');
-
-        // Pindahkan konten ke atas "Learn More" saat ditampilkan
-        if (content.classList.contains("expand")) {
-            content.parentNode.insertBefore(content, document.querySelector('.learn-more'));
-        }
-
-        if (content.style.display === "none" || content.style.display === ""){
-            content.style.display = "block";
-        } else {
-            content.style.display = "none";
-        }
-    }
-
-    // Hamburger menu functionality
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
-
-    // Close menu when a link is clicked
-    document.querySelectorAll('.nav-links li a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        });
-    });
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
